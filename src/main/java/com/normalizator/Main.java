@@ -18,6 +18,7 @@ public class Main {
         String fileName = sc.nextLine();
         File fileIn = new File(fileName);
         String fileOut = fileIn.getParent()+ "\\normalize_"+ fileIn.getName();
+        System.out.println("Новый файл будет создан здеся:");
         System.out.println(fileOut);
         normalize(fileIn, fileOut);
     }
